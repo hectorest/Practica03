@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Juego 10x10</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Hector Esteve Yagüe" />
+	<link rel='stylesheet' type='text/css' href="estilo.css"/> 
+	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
+	<script src="main.js"></script>
+</head>
+<body>
+	<header id="piCabec">
+		<div>
+			<a href="index.html"><h1>Juego 10x10</h1></a>
+			<h2>Coloca las piezas en el tablero para obtener puntos. Por cada fila o columna completa recibirás puntos extra</h2>
+		</div>
+	</header>
+	<section class="canvasSection" id="pJuego">
+		<h3>Panel de juego</h3>
+		<div>
+			<div id="divPunt">
+				<h4>Puntuación</h4>
+				<span id="pts">0</span>
+			</div>
+			<canvas id="cv01">
+				
+			</canvas>			
+		</div>
+	</section>
+	<section class="canvasSection" id="pColocar">
+		<h3>Piezas a colocar</h3>
+		<div>
+			<canvas id="cv02" onclick="destacar(0)">
+				
+			</canvas>
+			<canvas id="cv03" onclick="destacar(1)">
+				
+			</canvas>
+			<canvas id="cv04" onclick="destacar(2)">
+				
+			</canvas>
+		</div>
+	</section>
+	<footer>
+		<p><strong><a href="acerca.html" title="Información de contacto">&copy;Hector Esteve Yagüe</a></strong><time datetime="2015-05">Mayo de 219</time><a href="#piCabec"><span class="icon-angle-circled-up" title="Subir al encabezado"></span></a></p>
+	</footer>
+	<script>
+		prepararCanvas();
+		modales(0);
+		pedirRanking();
+	</script>
+</body>
+</html>
